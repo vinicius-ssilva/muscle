@@ -206,7 +206,7 @@ flex-direction: column;
 }}
 @media (max-width:480px){
    #content-menu p{
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     
 }
 .content-botao{
