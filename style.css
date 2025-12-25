@@ -101,9 +101,7 @@ body{
     object-fit: cover;
   
 }
-#content-beneficios{
 
-}
 #content-beneficios h2{
     width: 22rem;
         font-size: 1.5rem;
@@ -157,3 +155,70 @@ footer div img{
     cursor: pointer;
 }
  
+@media (max-width:1015px){
+    header{
+        flex-direction: column;
+    }
+    #content-menu{
+    margin: auto;
+    
+}
+#content-menu p{
+margin-top: 1rem ;
+}
+ header h1{
+    text-align: center;
+          margin: auto;
+          font-size: 1.5rem;
+
+}
+.content-botao{
+        margin-top: -7rem;
+
+}
+#content-titulo p{
+              font-size: 0.8rem;
+
+       margin:0.5rem auto;
+
+}
+#content-imagem-1{
+flex-direction: column;
+
+
+}
+    
+}
+@media (max-width:625px){
+  #imagem-destaque-1{
+    max-width: 20rem;
+    height: 20rem;
+  }
+  #content-beneficios h2{
+        font-size: 1.2rem;
+
+}
+
+#content-beneficios > ul li{
+    font-size: 1rem;
+    
+    
+}}
+@media (max-width:480px){
+   #content-menu p{
+    font-size: 0.8rem;
+    
+}
+.content-botao{
+        margin-top: -10rem;
+
+}
+.content-botao button{
+   
+    padding:0.6rem;
+    width: 11rem;
+    height: 3.2rem;
+   
+}
+
+}
