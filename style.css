@@ -189,7 +189,7 @@ flex-direction: column;
 }
     
 }
-@media (max-width:625px){
+@media (max-width:650px){
   #imagem-destaque-1{
     max-width: 20rem;
     height: 20rem;
@@ -203,7 +203,39 @@ flex-direction: column;
     font-size: 1rem;
     
     
-}}
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 15rem;
+    background: #333333;
+    padding: 1rem;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+}
+footer div p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+    color: white;
+    width: 25rem;
+    margin: 0.7rem;
+    font-size: 1.1rem;
+}
+#redes{
+   flex-direction: row;
+   margin-top: 0.2rem;
+}
+
+
+}
 @media (max-width:480px){
    #content-menu p{
     font-size: 1.2rem;
