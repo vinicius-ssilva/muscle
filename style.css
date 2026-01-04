@@ -4,6 +4,34 @@
         font-family: monospace;
 
 }
+#content-buttons{
+    display: flex;
+    width: 25rem;
+    margin:2rem auto;
+}
+
+.botao-preto{
+    background-color: #363636;
+}
+.botao-red{
+    background-color: red;
+}
+.hide{
+    display: none;
+    
+}
+.button-js{
+    display: block;
+margin: auto;
+width: 4em;
+height: 4rem;
+border-radius: 4rem;
+border: 0;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
+    cursor: pointer;
+
+
+}
 header{
     display: flex;
     flex-direction: row;
@@ -46,8 +74,7 @@ header{
 
 }
 section{
-
-    
+padding: 1rem;    
     background-color: rgb(236, 236, 236);
    
 }
