@@ -1,32 +1,14 @@
 
 
-const botao1=document.getElementById("botao1")
-const botao2=document.getElementById("botao2")
-const botao3=document.getElementById('botao3')
-const botao4=document.getElementById('botao4')
+const contentNav=document.querySelectorAll(".content-nav")
+const navp=document.querySelectorAll('.text-nav')
 
 const listaJiu=document.getElementById("listaJiu")
 const saberJiu=document.getElementById("saberJiu")
 
-
-const botoes=[botao1,botao2,botao3,botao4]
-
-
-
 const listaMusculacao=document.getElementById("listaMusculacao")
 const verMusculacao=document.getElementById("verMusculacao")
 
-
-function alternarCores(botao) {
-    botao.classList.toggle("botao-preto")
-    
-} 
-
-botoes.forEach(botao=>{
-    botao.addEventListener("click",()=>{
-        alternarCores(botao)
-    })
-})
 
 saberJiu.addEventListener("click",()=>{
         listaJiu.innerHTML=""
@@ -46,9 +28,7 @@ listaJiujitsu.forEach(item=>{
 
 })
 
-
 })
-
 
 verMusculacao.addEventListener('click',()=>{
 
@@ -68,10 +48,29 @@ novos.forEach(item1=>{
 
 
 
-
-
-
 })
+
+function controlNav(content,p){
+    p.style.display="block"
+
+    content.addEventListener("mouseleave",()=>{
+        p.style.display="none"
+    })
+
+  
+
+
+
+}
+contentNav.forEach(content=>{
+    const p=content.querySelector('p')
+content.addEventListener('mouseenter',()=>{
+    controlNav(content,p)
+})
+})
+
+
+
 
 
 
